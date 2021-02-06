@@ -14,7 +14,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 
 @Configuration
-@MapperScan(basePackages = "", sqlSessionFactoryRef = "postgreSqlSessionFactory")
+@MapperScan(basePackages = "com.data.dao.postgre", sqlSessionFactoryRef = "postgreSqlSessionFactory")
 public class DataSourcePG {
 	
 	@Bean(name = "postgreDataSource")

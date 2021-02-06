@@ -14,7 +14,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 
 @Configuration
-@MapperScan(basePackages = "", sqlSessionFactoryRef = "db2SqlSessionFactory")
+@MapperScan(basePackages = "com.data.dao.db2", sqlSessionFactoryRef = "db2SqlSessionFactory")
 public class DataSourceDB2 {
 	
 	@Bean(name = "db2DataSource")

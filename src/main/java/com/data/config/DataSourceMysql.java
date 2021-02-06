@@ -15,7 +15,7 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 
 @Configuration
-@MapperScan(basePackages = "", sqlSessionFactoryRef = "mysqlSqlSessionFactory")
+@MapperScan(basePackages = "com.data.dao.mysql", sqlSessionFactoryRef = "mysqlSqlSessionFactory")
 public class DataSourceMysql {
 	
 	@Primary

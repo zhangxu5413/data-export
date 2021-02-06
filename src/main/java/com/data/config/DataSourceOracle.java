@@ -17,7 +17,7 @@ import javax.sql.DataSource;
  * Class Description:
  */
 @Configuration//注解到spring容器中
-@MapperScan(basePackages = {""},sqlSessionFactoryRef = "oracleSqlSessionFactory")
+@MapperScan(basePackages = {"com.data.dao.oracle"},sqlSessionFactoryRef = "oracleSqlSessionFactory")
 public class DataSourceOracle {
     /**
      * 返回oracle数据库的数据源
